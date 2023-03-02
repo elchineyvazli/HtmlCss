@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  color: #34485a;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+.totalPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.totalPage header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.totalPage header .topPartHeader {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  background-color: #3ad4d8;
+}
+.totalPage header .topPartHeader .gmailAndPhoneInfo {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.totalPage header .topPartHeader .gmailAndPhoneInfo .phone {
+  font-size: 15px;
+  font-weight: 600;
+  display: inline-block;
+  border-right: solid 1px black;
+  padding-right: 12px;
+}
+.totalPage header .topPartHeader .gmailAndPhoneInfo .email {
+  font-size: 15px;
+  font-weight: 600;
+  display: inline-block;
+}
+.totalPage header .topPartHeader .contactPart {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.totalPage header .navbar {
+  width: 100%;
+  height: 100px;
+  border: solid 1px #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.totalPage header .navbar .logo {
+  width: 84px;
+  height: 58px;
+}
+.totalPage header .navbar .navbarLinks {
+  max-width: 861px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-around;
+}
+.totalPage header .navbar .navbarLinks .links {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #181818;
+  display: inline-block;
+  position: relative;
+}
+.totalPage header .navbar .navbarLinks .links::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.totalPage header .navbar .navbarLinks .links:hover::after {
+  width: 100%;
+  left: 0;
+}
+.totalPage header .navbar .navbarButtons {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.totalPage header .navbar .navbarButtons .buttonsInNavbar {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+}
+.totalPage header .navbar .navbarButtons .likeButton {
+  background-image: url("../images/like.png");
+  background-repeat: no-repeat;
+  background-size: 55% 50%;
+  background-position: center;
+}
+.totalPage header .navbar .navbarButtons .userButton {
+  background-image: url("../images/user.png");
+  background-size: 55% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.totalPage header .navbar .navbarButtons .searchButton {
+  background-image: url("../images/search.png");
+  background-size: 55% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.totalPage header .middleHeader {
+  width: 100%;
+  height: 500px;
+  border: solid 1px #000;
+  display: flex;
+  flex-direction: column;
+}
+.totalPage header .middleHeader .topMiddleHeader {
+  width: 100%;
+  height: 450px;
+  border: solid 1px #000;
+  display: flex;
+}
+.totalPage header .middleHeader .bottomMiddleHeader {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=main.css.map */
