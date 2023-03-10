@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +7,7 @@
   color: #34485a;
   box-sizing: border-box;
   font-family: "Mulish", sans-serif;
+  border: solid 3px red;
 }
 
 .startNowButton {
@@ -26,7 +28,6 @@
   display: flex !important;
   align-items: center !important;
   gap: 50px !important;
-  margin-left: 200px;
   transition: 0.5s;
 }
 
@@ -87,7 +88,6 @@ body header .topPartHeader .contactPart {
 body header .navbar {
   width: 100%;
   height: 100px;
-  border: solid 1px #000;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -129,7 +129,7 @@ body header .navbar .navbarLinks .links:hover::after {
   left: 0;
 }
 body header .navbar .navbarButtons {
-  width: 200px;
+  width: 280px;
   height: 50px;
   display: flex;
   align-items: center;
@@ -149,42 +149,60 @@ body header .navbar .navbarButtons .buttonsInNavbar:hover {
   background-color: #671c7c;
 }
 body header .navbar .navbarButtons .likeButton {
-  background-image: url("../images/like.png");
+  background-image: url("../images/Header/like.png");
   background-repeat: no-repeat;
   background-size: 55% 50%;
   background-position: center;
 }
 body header .navbar .navbarButtons .likeButton:hover {
-  background-image: url("../images/likeHover.png");
+  background-image: url("../images/Header/likeHover.png");
 }
 body header .navbar .navbarButtons .userButton {
-  background-image: url("../images/user.png");
+  background-image: url("../images/Header/user.png");
   background-size: 55% 50%;
   background-repeat: no-repeat;
   background-position: center;
 }
 body header .navbar .navbarButtons .userButton:hover {
-  background-image: url("../images/userHover.png");
+  background-image: url("../images/Header/userHover.png");
 }
 body header .navbar .navbarButtons .searchButton {
-  background-image: url("../images/search.png");
+  background-image: url("../images/Header/search.png");
   background-size: 55% 50%;
   background-repeat: no-repeat;
   background-position: center;
 }
 body header .navbar .navbarButtons .searchButton:hover {
-  background-image: url("../images/searchHover.png");
+  background-image: url("../images/Header/searchHover.png");
+}
+body header .navbar .navbarButtons .hMenu {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 40%;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+}
+body header .navbar .navbarButtons .hMenu .line {
+  width: 35px;
+  height: 4px;
+  border: none;
+  background-color: #671C7C;
+  border-radius: 2px;
 }
 body header .middleHeader {
   width: 100%;
   height: 600px;
-  border: solid 1px #000;
   display: flex;
   flex-direction: column;
 }
 body header .middleHeader .topMiddleHeader {
   width: 100%;
-  border: solid 1px #000;
   display: flex;
 }
 body header .middleHeader .topMiddleHeader .infoTopMiddleHeader {
@@ -194,7 +212,6 @@ body header .middleHeader .topMiddleHeader .infoTopMiddleHeader {
   flex-direction: column;
   padding-left: 40px;
   gap: 20px;
-  border: solid 1px red;
 }
 body header .middleHeader .topMiddleHeader .infoTopMiddleHeader .infoTextOfHeader {
   color: #181818;
@@ -220,6 +237,13 @@ body header .middleHeader .topMiddleHeader .infoTopMiddleHeader .startNowButton 
   justify-content: center;
   border: none;
   font-size: 15px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+body header .middleHeader .topMiddleHeader .infoTopMiddleHeader .startNowButton:hover {
+  background-color: white;
+  color: #543ee9;
+  border: solid 1px #543ee9;
 }
 body header .middleHeader .topMiddleHeader .pictureTopMiddleHeader {
   width: 50%;
@@ -256,12 +280,12 @@ body header .middleHeader .topMiddleHeader .pictureTopMiddleHeader .purpleRectan
   width: 450px;
 }
 body header .middleHeader .topMiddleHeader .pictureTopMiddleHeader .lightBlueRectangle {
+  width: 400px;
+  height: 400px;
   position: absolute;
   z-index: -2;
   left: 0;
   bottom: 170px;
-  width: 400px;
-  height: 400px;
 }
 body header .middleHeader .topMiddleHeader .pictureTopMiddleHeader .lightBlueCircle {
   position: absolute;
@@ -304,7 +328,6 @@ body main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border: solid 1px blue;
 }
 body main .info {
   width: 100%;
@@ -348,7 +371,24 @@ body main .info .infoText {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
+}
+body main .info .infoText button {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #543EE9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  transition: 0.6s;
+}
+body main .info .infoText button:hover {
+  background-color: white;
+  border: solid 1px #543EE9;
+  color: #543ee9;
 }
 body main .popularCourse {
   width: 100%;
@@ -363,7 +403,6 @@ body main .popularCourse .textArea {
   align-items: center;
   justify-content: center;
   position: relative;
-  border: solid 1px #000;
   color: black;
   gap: 10px;
 }
@@ -383,7 +422,6 @@ body main .popularCourse .textArea .purpleCircle {
 body main .popularCourse .cardsInPopularCourse {
   width: 100%;
   height: 500px;
-  border: dashed 1px red;
   display: flex;
   justify-content: space-around;
   padding-top: 10px;
@@ -405,7 +443,7 @@ body main .popularCourse .cardsInPopularCourse .cardForCourse .likeCircleForCour
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-image: url("../images/like.png");
+  background-image: url("../images/Header/like.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60% 60%;
@@ -432,7 +470,13 @@ body main .popularCourse .cardsInPopularCourse .cardForCourse .dateAndName .dot 
 }
 body main .popularCourse .cardsInPopularCourse .cardForCourse .dateAndName .dateCard,
 body main .popularCourse .cardsInPopularCourse .cardForCourse .dateAndName .name {
+  display: block;
   color: red;
+}
+body main .popularCourse .cardsInPopularCourse .cardForCourse p,
+body main .popularCourse .cardsInPopularCourse .cardForCourse sup {
+  display: none;
+  color: #3ad4d8;
 }
 body main .popularCourse .cardsInPopularCourse .cardForCourse .nameOfCard {
   width: 85%;
@@ -456,25 +500,16 @@ body main .popularCourse .cardsInPopularCourse .cardForCourse .buttonAndPrice .d
   justify-content: center;
   border: none;
   cursor: pointer;
+  transition: 0.6s;
 }
-body main .popularCourse .cardsInPopularCourse .firstCourseCard {
-  width: 300px;
-  height: 480px;
-  padding: 10px;
-}
-body main .popularCourse .cardsInPopularCourse .firstCourseCard .buttonAndPrice .detailsButton {
+body main .popularCourse .cardsInPopularCourse .cardForCourse .buttonAndPrice .detailsButton:hover {
   background-color: white;
-  border: solid 1px #000;
-  color: black;
-}
-body main .popularCourse .cardsInPopularCourse .firstCourseCard .buttonAndPrice p,
-body main .popularCourse .cardsInPopularCourse .firstCourseCard .buttonAndPrice sup {
-  color: #3ad4d8;
+  color: #543EE9;
+  border: 1px solid #353535;
 }
 body main .popularCourse .buttonPartForPopularCourse {
   width: 100%;
   height: 80px;
-  border: solid 1px #000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -488,6 +523,12 @@ body main .popularCourse .buttonPartForPopularCourse .showAllButton {
   background-color: white;
   border: none;
   cursor: pointer;
+  transition: 0.6s;
+}
+body main .popularCourse .buttonPartForPopularCourse .showAllButton:hover {
+  border: 1px solid #353535;
+  background-color: #543ee9;
+  color: white;
 }
 body main .popularCourse .buttonPartForPopularCourse .purpleCircleInButtonPart {
   position: absolute;
@@ -506,7 +547,6 @@ body main .aboutNaila .containerAboutNaila {
   width: 80%;
   height: 346px;
   display: flex;
-  border: solid 1px #000;
 }
 body main .aboutNaila .containerAboutNaila .textForContainerAboutNaila {
   width: 56%;
@@ -537,7 +577,14 @@ body main .aboutNaila .containerAboutNaila .textForContainerAboutNaila .signInBu
   background-color: #543ee9;
   color: white;
   border: none;
+  transition: 0.6s;
   border-radius: 25px;
+  cursor: pointer;
+}
+body main .aboutNaila .containerAboutNaila .textForContainerAboutNaila .signInButton:hover {
+  color: #543EE9;
+  background-color: white;
+  border: 1px solid #353535;
 }
 body main .onlineLesson {
   width: 100%;
@@ -546,15 +593,20 @@ body main .onlineLesson {
 }
 body main .onlineLesson .textOnlineLesson {
   width: 100%;
-  height: 100px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
+  justify-content: center;
 }
 body main .onlineLesson .textOnlineLesson h1 {
   font-size: 30px;
   font-weight: 800;
+}
+body main .onlineLesson .textOnlineLesson p {
+  width: 50%;
+  text-align: center;
 }
 body main .onlineLesson .cardsOnlineLesson {
   width: 100%;
@@ -583,6 +635,7 @@ body main .onlineLesson .cardsOnlineLesson .cardOnlineLesson2 {
   width: 399px;
   height: 313px;
   background-image: url("../images/OnlineLesson/childWithPen.png");
+  background-size: 100% 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -602,6 +655,7 @@ body main .onlineLesson .cardsOnlineLesson .cardOnlineLesson3 {
   width: 399px;
   height: 313px;
   background-image: url("../images/OnlineLesson/girlWithBook.png");
+  background-size: 100% 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -645,7 +699,6 @@ body main .onlineExams .cardsOnlineExams {
   display: flex;
   align-items: center;
   gap: 20px;
-  border: solid 1px #000;
   padding: 0 40px;
 }
 body main .onlineExams .cardsOnlineExams .cardOnlineExams {
@@ -667,7 +720,6 @@ body main .onlineExams .cardsOnlineExams .cardOnlineExams .cardOnlineExamsBottom
 body main .onlineExams .cardsOnlineExams .cardOnlineExams .cardOnlineExamsBottom .nameAndExamOnlineExams {
   width: 100%;
   height: 40px;
-  border: solid 1px #000;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -684,12 +736,10 @@ body main .onlineExams .cardsOnlineExams .cardOnlineExams .cardOnlineExamsBottom
 body main .onlineExams .cardsOnlineExams .cardOnlineExams .cardOnlineExamsBottom .forHoverText {
   width: 100%;
   height: 185px;
-  border: solid 1px #000;
 }
 body main .onlineExams .cardsOnlineExams .cardOnlineExams .cardOnlineExamsBottom .buttonAndPriceOnlineExams {
   width: 100%;
   height: 50px;
-  border: solid 1px #000;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -709,7 +759,6 @@ body main .onlineExams .cardsOnlineExams .cardOnlineExams .cardOnlineExamsBottom
   transition: 0.6s;
 }
 body main .onlineExams .cardsOnlineExams .cardOnlineExams .cardOnlineExamsBottom .buttonAndPriceOnlineExams .detailsButton:hover {
-  border: solid 1px #000;
   color: #000;
   background-color: white;
 }
@@ -721,7 +770,6 @@ body main .onlineExams .cardsOnlineExams .cardOnlineExams .cardOnlineExamsBottom
 body main .onlineExams .switchArrowsAndButton .arrows {
   width: 100%;
   height: 35px;
-  border: dashed 1px blue;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -783,7 +831,6 @@ body main .onlineExams .switchArrowsAndButton .buttonArea button:hover::after {
 body main .scienceAcademic {
   width: 100%;
   height: 704px;
-  border: solid 1px #000;
   background-color: #e2eaf8;
   display: flex;
   align-items: center;
@@ -792,13 +839,11 @@ body main .scienceAcademic {
 body main .scienceAcademic .containerScienceAcademic {
   width: 90%;
   height: 500px;
-  border: dashed 1px red;
   display: flex;
 }
 body main .scienceAcademic .containerScienceAcademic .pictureScienceAcademic {
   width: 55%;
   height: 500px;
-  border: solid 1px #000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -886,13 +931,11 @@ body main .scienceAcademic .containerScienceAcademic .infoScienceAcademic button
   transition: 0.6s;
 }
 body main .scienceAcademic .containerScienceAcademic .infoScienceAcademic button:hover {
-  border: solid 1px #000;
   background-color: white;
   color: black;
 }
 body main .comments {
   width: 100%;
-  border: solid 1px #000;
   display: flex;
   flex-direction: column;
 }
@@ -903,6 +946,10 @@ body main .comments .commentsText {
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+body main .comments .commentsText h1 {
+  font-size: 30px;
+  font-weight: 1000;
 }
 body main .comments .commentsCards {
   width: 100%;
@@ -931,7 +978,6 @@ body main .comments .commentsCards .commentsCard:hover button {
 body main .comments .commentsCards .commentsCard .forPicture {
   width: 100%;
   height: 70px;
-  border: solid 1px #000;
   display: flex;
   align-items: center;
 }
@@ -941,7 +987,6 @@ body main .comments .commentsCards .commentsCard .bottom {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  border: solid 1px #000;
 }
 body main .comments .commentsCards .commentsCard .bottom img {
   width: 60px;
@@ -1001,7 +1046,6 @@ body main .graduate .graduateCards {
   align-items: flex-start;
   justify-content: center;
   gap: 20px;
-  border: solid 1px #000;
 }
 body main .graduate .graduateCards .graduateCard {
   width: 315px;
@@ -1034,7 +1078,6 @@ body main .graduate .graduateCards .graduateCard .graduateCardTop img {
 body main .graduate .graduateCards .graduateCard .graduateCardBottom {
   width: 100%;
   height: 130px;
-  border: solid 2px #000;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -1050,7 +1093,6 @@ body main .graduate .graduateCards .graduateCard .graduateCardBottom p {
 body main .graduate .graduateCards .graduateCard .forPrice {
   width: 100%;
   height: 35px;
-  border: solid 1px #000;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -1093,7 +1135,6 @@ body main .forMath {
 body main .forMath .forText {
   width: 50%;
   height: 500px;
-  border: solid 1px #000;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -1110,7 +1151,6 @@ body main .forMath .forText p {
 body main .forMath .forPicture {
   width: 50%;
   height: 500px;
-  border: solid 1px #000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1140,7 +1180,6 @@ body main .certificate .forText p {
 body main .certificate .carousel {
   width: 100%;
   height: 550px;
-  border: solid 1px #000;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1155,7 +1194,6 @@ body main .certificate .carousel .gallery {
   margin: 10px auto;
   text-align: center;
   position: relative;
-  border: solid 1px #000;
 }
 body main .certificate .carousel .gallery .buttons {
   position: absolute;
@@ -1212,8 +1250,11 @@ body main .certificate .carousel button:hover {
 }
 body main .books {
   width: 100%;
+  height: 620px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 body main .books .forText {
   width: 100%;
@@ -1234,7 +1275,6 @@ body main .books .forText p {
 body main .books .forCarousel {
   width: 100%;
   height: 400px;
-  border: solid 1px #000;
   display: flex;
   justify-content: center;
 }
@@ -1249,7 +1289,7 @@ body main .books .forCarousel .owl-books .item img {
   width: 100%;
   height: 100%;
 }
-body main .books button {
+body main .books .allButton {
   width: 150px;
   height: 40px;
   display: flex;
@@ -1257,4 +1297,226 @@ body main .books button {
   justify-content: center;
   border: none;
   background-color: white;
+  box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+body main .books .allButton:hover {
+  background-color: #543ee9;
+  color: white;
+}
+body main .news {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+body main .news .newsText {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+body main .news .newsText h1 {
+  font-size: 30px;
+  font-weight: 1000;
+}
+body main .news .newsText p {
+  font-weight: 600;
+  font-size: 15px;
+  width: 45%;
+  text-align: center;
+}
+body main .news .newsCards {
+  width: 100%;
+  height: 430px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+body main .news .newsCards .newsCard {
+  width: 315px;
+  height: 428px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 7px rgba(190, 190, 190, 0.5);
+}
+body main .news .newsCards .newsCard:hover .button {
+  display: block;
+}
+body main .news .newsCards .newsCard:hover .cardTop {
+  padding: 10px;
+}
+body main .news .newsCards .newsCard .cardTop {
+  width: 100%;
+  height: 228px;
+}
+body main .news .newsCards .newsCard .cardTop img {
+  width: 100%;
+  height: 100%;
+}
+body main .news .newsCards .newsCard .cardBottom {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+body main .news .newsCards .newsCard .cardBottom .info {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+body main .news .newsCards .newsCard .cardBottom .info h1 {
+  font-size: 20px;
+}
+body main .news .newsCards .newsCard .cardBottom .info p {
+  font-size: 15px;
+}
+body main .news .newsCards .newsCard .cardBottom .timeAndButton {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: relative;
+}
+body main .news .newsCards .newsCard .cardBottom .timeAndButton h2 {
+  color: #FE5538;
+  font-size: 15px;
+  font-weight: 800;
+}
+body main .news .newsCards .newsCard .cardBottom .timeAndButton h2::after {
+  content: "İyun";
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+}
+body main .news .newsCards .newsCard .cardBottom .timeAndButton .arrowButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-image: url("../images/Comments/arrowButton.png");
+  box-shadow: 0px 0px 10px rgba(67, 67, 67, 0.25);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 105% 105%;
+  background-color: #543EE9;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+body footer {
+  width: 100%;
+  height: 400px;
+  background-color: #671C7C;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+body footer .footerTop {
+  width: 100%;
+  display: flex;
+}
+body footer .footerTop .part1 {
+  width: 25%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body footer .footerTop .part2 {
+  width: 16%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  gap: 20px;
+}
+body footer .footerTop .part2 a {
+  color: white;
+}
+body footer .footerTop .part2 a:hover {
+  text-decoration: underline;
+}
+body footer .footerTop .part3 {
+  width: 16%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  gap: 20px;
+}
+body footer .footerTop .part3 a {
+  color: white;
+}
+body footer .footerTop .part3 a:hover {
+  text-decoration: underline;
+}
+body footer .footerTop .part4 {
+  width: 16%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  gap: 20px;
+}
+body footer .footerTop .part4 a {
+  color: white;
+}
+body footer .footerTop .part4 a:hover {
+  text-decoration: underline;
+}
+body footer .footerTop .part5 {
+  width: 15%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  gap: 20px;
+}
+body footer .footerTop .part5 a {
+  color: white;
+}
+body footer .footerTop .part5 a:hover {
+  text-decoration: underline;
+}
+body footer .footerTop .part6 {
+  width: 12%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+body footer .footerBottom {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+body footer .footerBottom p {
+  color: white;
+  font-size: 12px;
+}
+body footer .footerBottom .lastWord::after {
+  content: " JedAi";
+  font-weight: 800;
 }/*# sourceMappingURL=main.css.map */

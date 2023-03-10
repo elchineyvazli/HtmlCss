@@ -35,3 +35,13 @@ $('.owl-books').owlCarousel({
         }
     }
 });
+
+let hMenu = document.querySelector(".hMenu");
+let navbarLinks = document.querySelector('.navbarLinks');
+hMenu.addEventListener('click', function(){
+  if(navbarLinks.style.display == "flex"){
+    navbarLinks.style.display = "none"
+  }else{
+    navbarLinks.style.display = "flex"
+  }
+})
