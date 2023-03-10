@@ -192,7 +192,7 @@ body header .navbar .navbarButtons .hMenu .line {
   width: 35px;
   height: 4px;
   border: none;
-  background-color: #671C7C;
+  background-color: #671c7c;
   border-radius: 2px;
 }
 body header .middleHeader {
@@ -377,7 +377,7 @@ body main .info .infoText button {
   width: 150px;
   height: 40px;
   border-radius: 20px;
-  background-color: #543EE9;
+  background-color: #543ee9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -387,7 +387,7 @@ body main .info .infoText button {
 }
 body main .info .infoText button:hover {
   background-color: white;
-  border: solid 1px #543EE9;
+  border: solid 1px #543ee9;
   color: #543ee9;
 }
 body main .popularCourse {
@@ -504,7 +504,7 @@ body main .popularCourse .cardsInPopularCourse .cardForCourse .buttonAndPrice .d
 }
 body main .popularCourse .cardsInPopularCourse .cardForCourse .buttonAndPrice .detailsButton:hover {
   background-color: white;
-  color: #543EE9;
+  color: #543ee9;
   border: 1px solid #353535;
 }
 body main .popularCourse .buttonPartForPopularCourse {
@@ -582,7 +582,7 @@ body main .aboutNaila .containerAboutNaila .textForContainerAboutNaila .signInBu
   cursor: pointer;
 }
 body main .aboutNaila .containerAboutNaila .textForContainerAboutNaila .signInButton:hover {
-  color: #543EE9;
+  color: #543ee9;
   background-color: white;
   border: 1px solid #353535;
 }
@@ -1391,7 +1391,7 @@ body main .news .newsCards .newsCard .cardBottom .timeAndButton {
   position: relative;
 }
 body main .news .newsCards .newsCard .cardBottom .timeAndButton h2 {
-  color: #FE5538;
+  color: #fe5538;
   font-size: 15px;
   font-weight: 800;
 }
@@ -1413,7 +1413,7 @@ body main .news .newsCards .newsCard .cardBottom .timeAndButton .arrowButton {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 105% 105%;
-  background-color: #543EE9;
+  background-color: #543ee9;
   border: none;
   cursor: pointer;
   display: none;
@@ -1421,7 +1421,7 @@ body main .news .newsCards .newsCard .cardBottom .timeAndButton .arrowButton {
 body footer {
   width: 100%;
   height: 400px;
-  background-color: #671C7C;
+  background-color: #671c7c;
   display: flex;
   flex-direction: column;
   padding: 30px;
